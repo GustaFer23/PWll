@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labor</title>
+</head>
+<body>
+    
+<h1>
+<?php
+$altura = 1.70;
+$peso = 70;
+
+$IMC = $peso/($altura*$altura);
+
+if($IMC<18.5) {
+    echo "<p> Magreza </p>";
+} else if ($IMC<24.9) {
+    echo "<p> Normal </p>";
+} else if ($IMC<29.9) {
+    echo "<p> Sobrepeso </p>";
+} else if ($IMC<39.9) {
+    echo "<p> Obesidade </p>";
+} else if ($IMC>39.9) {
+    echo "<p> Obesidade grave </p>";
+} 
+
+?>
+</h1>
+</body>
+</html>
